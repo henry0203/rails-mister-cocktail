@@ -2,6 +2,12 @@
   <div class="banner-content">
     <h1>Mister cocktail App</h1>
     <p>Make your cocktail creative</p>
+    <div class="row">
     <%=link_to "See all the cocktails", "#cocktails", class: "btn btn-primary btn-lg" %>
+    </div>
+    <div style="margin-bottom:30px"></div>
+    <div class="row">
+    <%= link_to "Create a new cocktail", new_cocktail_path, class: "btn btn-primary btn-lg" %>
+    </div>
   </div>
 </div>
