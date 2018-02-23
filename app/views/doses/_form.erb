@@ -1,5 +1,8 @@
 <%= simple_form_for [cocktail, dose] do |f| %>
   <%= f.input :description %>
-  <%= f.input :ingredient_id, collection: Ingredient.all %>
+  <%= select_tag "dose[ingredient_id]", options_from_collection_for_select(
+          Ingredient.all,
+          :id, :name),
+          class: 'select2' %>
   <%= f.submit "add a dose", class: "btn btn-primary" %>
 <% end %>

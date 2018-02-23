@@ -11,14 +11,10 @@
   </head>
 
   <body>
-    <div class="logo"></div>
-    <%= render 'shared/banner' %>
-    <%= render 'shared/card' %>
     <%= render 'shared/navbar' %>
-    <%= image_tag "logo.png", alt: "Le Wagon", width: 200 %>
-        <span id="banner-typed-text"></span>
+    <div style="height:70px;"></div>
     <%= yield %>
-    <%= javascript_include_tag "application" %>
     <%= javascript_pack_tag "application" %>
+    <%= stylesheet_pack_tag "application" %>
   </body>
 </html>
